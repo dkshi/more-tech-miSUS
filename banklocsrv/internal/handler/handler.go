@@ -22,7 +22,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 		auth.POST("/sign-in", h.signIn)
 	}
 
-	departments := router.Group("/departments")
+	departments := router.Group("/departments", h.userIdentity)
 	{
 		departments.GET("/atms", h.atms)
 		departments.GET("/offices", h.offices)
@@ -30,7 +30,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 		departments.POST("/filter-atms", h.filterAtms)
 	}
 
-	check := router.Group("/check")
+	check := router.Group("/check", h.userIdentity)
 	{
 		check.GET("", h.check)
 	}
