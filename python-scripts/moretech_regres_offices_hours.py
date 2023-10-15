@@ -19,7 +19,7 @@ import random
 # In[2]:
 
 
-engine = create_engine('postgresql://postgres:qwerty@26.132.86.192:5436/postgres')
+engine = create_engine('postgresql://postgres:qwerty@localhost:5436/postgres')
 atms_df = pd.read_sql_query('SELECT * FROM atms', con=engine)
 oh_df = pd.read_sql_query('SELECT * FROM offices_hours', con=engine)
 oh_df.drop('id', inplace=True, axis=1)

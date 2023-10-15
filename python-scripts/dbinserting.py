@@ -4,7 +4,7 @@ import pandas as pd
 
 
 
-conn = psycopg2.connect(database="postgres", user="postgres", password="qwerty", host="26.132.86.192",
+conn = psycopg2.connect(database="postgres", user="postgres", password="qwerty", host="localhost",
                         port="5436")
 
 with open("atms.json", encoding='utf-8') as file:
