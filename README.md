@@ -1,6 +1,5 @@
 # more-tech-miSUS
-
-
+<img src='https://i.kym-cdn.com/photos/images/original/001/966/775/de4.png' width='250' height='300'>
 Порядок запуска:
 
 Отредактируйте данные доступа к БД во всех модулях для необходимости.
