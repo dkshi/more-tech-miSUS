@@ -1,0 +1,11 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_active"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="152dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="36dp"
+    />
+
