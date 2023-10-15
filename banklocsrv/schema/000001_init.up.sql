@@ -91,6 +91,34 @@ CREATE TABLE offices_hours_individual
     FOREIGN KEY (office_id) REFERENCES offices(id)
 );
 
+CREATE TABLE hours_predict
+(
+    id SERIAL PRIMARY KEY,
+    office_id INT NOT NULL,
+    monday INTEGER[] NOT NULL,
+    tuesday INTEGER[] NOT NULL,
+    wednesday INTEGER[] NOT NULL,
+    thursday INTEGER[] NOT NULL,
+    friday INTEGER[] NOT NULL,
+    saturday INTEGER[] NOT NULL,
+    sunday INTEGER[] NOT NULL,
+    FOREIGN KEY (office_id) REFERENCES offices(id)
+);
+
+CREATE TABLE hours_individual_predict
+(
+    id SERIAL PRIMARY KEY,
+    office_id INT NOT NULL,
+    monday INTEGER[] NOT NULL,
+    tuesday INTEGER[] NOT NULL,
+    wednesday INTEGER[] NOT NULL,
+    thursday INTEGER[] NOT NULL,
+    friday INTEGER[] NOT NULL,
+    saturday INTEGER[] NOT NULL,
+    sunday INTEGER[] NOT NULL,
+    FOREIGN KEY (office_id) REFERENCES offices(id)
+);
+
 CREATE TABLE offices_load
 (
     id SERIAL PRIMARY KEY,
